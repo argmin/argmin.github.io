@@ -1,2 +1,6 @@
-name: Waterfall ice
+title: Scribe notes
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
 markdown: kramdown
+theme: minima
