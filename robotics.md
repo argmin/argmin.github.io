@@ -7,3 +7,4 @@ active_tab: robotics
 
 * [What is a Robot?](/robotics/what-is-a-robot.html)
 * [Udacity Rover Project](/robotics/rover-project.html)
+* [Intro to ROS](robotics/intro-to-ros.html)
