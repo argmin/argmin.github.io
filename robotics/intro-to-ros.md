@@ -1,13 +1,13 @@
-## What is ROS
+### What is ROS
 ROS is a a middleware that lives between OS and your code, it provides these following services
 * Communication layer, 
 * device driver to communicate with hardware, 
 * simulation / logging / visualization tools, 
 * capabilities for control, perception, motion, planning etc.
 
-## Components of ROS
+### Components of ROS
 
-### ROS Master
+#### ROS Master
 * Provides naming and resgitration service and manages communication between nodes.
 * Enables node to discover other nodes.
 * Nodes register with `master` during startup.
@@ -19,7 +19,7 @@ ROS is a a middleware that lives between OS and your code, it provides these fol
 roscore -p port-number
 ```
 
-### ROS Node
+#### ROS Node
 * ROS Node is fined grained process that has single purpose, example move an arm
 * The nodes are individually compiled and managed 
 * Fault tolerances are isolated to single node,less code complexity
@@ -33,7 +33,7 @@ rosnode kill node_name # Kill a node
 rosnode ping node_name # Ping a node
 ```
 
-### ROS Topics
+#### ROS Topics
 * Nodes communicate over topics which named unidirectional buses via Pub-Sub model.
 * 1 Publisher per topic, & n Subscribers
 * Used for continuous data stream like camera images etc
@@ -44,7 +44,7 @@ rostopic echo /topic_name # Print messages being published to topic
 rostopic info /topic_name # Print information about a topic
 ```
 
-### ROS Messages
+#### ROS Messages
 * ROS node cummunicate with each othe rby publishing messages.
 * Messages are data structures that define the type of a topic.
 * Standard primitive types and their arrays are supported.
@@ -61,7 +61,7 @@ fieldtype3 fieldname3
 rostopic type /topic_name # Print type of messages
 ```
 
-### References
+#### References
 * [ETHZ ROS tutorial](https://www.ethz.ch/content/dam/ethz/special-interest/mavt/robotics-n-intelligent-systems/rsl-dam/ROS2017/lecture1.pdf)
 * [ROS Wiki](http://wiki.ros.org/)
 
