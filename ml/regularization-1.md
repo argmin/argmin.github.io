@@ -2,7 +2,7 @@
 
 This post is to provide a setting to explore one of the fundamental concepts in statistical learning - regularization.
 
-#### Problem Seeting
+#### Problem Setting
 
 The goal of supervised learning is to find a function $$ f $$ in the hypothesis space $$ H $$ such that it approximately fit data points $$ S $$
 
