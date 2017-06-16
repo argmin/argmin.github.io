@@ -61,6 +61,26 @@ fieldtype3 fieldname3
 rostopic type /topic_name # Print type of messages
 ```
 
+#### ROS Launch
+* It's a tool to launch mulptiple nodes
+* What nodes are to be launched are defined in `.launch` files, there are XML
+
+```sh
+roslaunch package_name file_name.launch
+```
+
+#### Build system
+* ROS uses catkin build system, to build packages, libraries, executables
+* `src`: Srouce code for your package, all the packages that you import go here.
+* `build`: Build space where packages are built
+* `devel`: Dev space where the built target are placed
+
+```sh
+catkin_init_workspace # Should be run in src, this initializes the workspace
+catkin_make # build code, should be run in the root level of workspace
+```
+
+
 #### References
 * [ETHZ ROS tutorial](https://www.ethz.ch/content/dam/ethz/special-interest/mavt/robotics-n-intelligent-systems/rsl-dam/ROS2017/lecture1.pdf)
 * [ROS Wiki](http://wiki.ros.org/)
