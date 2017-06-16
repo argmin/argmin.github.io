@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ### What is ROS
 ROS is a a middleware that lives between OS and your code, it provides these following services
 * Communication layer, 
