@@ -44,10 +44,30 @@ So our assumption and hope is that the empirical error is a proxy of expected er
 
 #### Learning algorithm
 
-The job of a learning algorithm in supervised setting is to find a function that minimizes the emperical error over a given dataset, this is commonly referred as `Emperical Risk Miimization`.
+The job of a learning algorithm in supervised setting is to find a function that minimizes the emperical error over a given dataset, this is commonly referred as `Emperical Risk Minimization`.
 
 $$ 
 f_s = argmin_{f \in H} I_s[f] 
 $$
 
-Imagine that the size of the hypothesis space is infinite, and there can be many functions that perfectly fit the given data points and fail to fit the data point that we would see in the future. 
+Imagine that the size of the hypothesis space is infinite, and there can be many functions in the hypothesis space that perfectly fit the given data points and fail to fit the data point that we would see in the future. 
+
+Our goal would be to place a restriction on the search of function in the hypothesis space such that there is a reasonable guarantee that $$ f_s $$ is approximate representation of actual function. This is called regularization. 
+
+There are two ways of regularization,
+* `Direct way` or `Ivanov regularization`: Minimize the emperical error while subjecting the function $$ f $$ to satify a constraint.
+$$ 
+min_{f \in H} I_n[f] such that R(f) \leqslant A
+$$
+
+* `Indirect way` or `Tikhonov regularization`: This is the most commonly used regularizer. Here we minimize the emperical error while adding the regularizer of the function to the emperical error.
+$$ 
+f_n = argmin_{f \in H} ( I_n[f] + \gamma R(f) )
+$$
+
+Where $$ R(f) $$ is a regularizer that penalizes the complexity of the function. If the function is more complicated the regularizer returns high value for that function thus keeping overfitting in check while generalizing $$ f $$.
+
+
+
+
+
