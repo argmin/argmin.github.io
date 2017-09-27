@@ -57,7 +57,7 @@ Our goal would be to place a restriction on the search of function in the hypoth
 There are two ways of regularization,
 * `Direct way` or `Ivanov regularization`: Minimize the emperical error while subjecting the function $$ f $$ to satify a constraint.
 $$ 
-min_{f \in H} I_n[f] such that R(f) \leqslant A
+min_{f \in H} I_n[f] \mid R(f) \leqslant A
 $$
 
 * `Indirect way` or `Tikhonov regularization`: This is the most commonly used regularizer. Here we minimize the emperical error while adding the regularizer of the function to the emperical error.
