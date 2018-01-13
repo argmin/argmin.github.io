@@ -21,7 +21,7 @@ Distinct features of fully convolution networks (FCN) are
 * `Upsampling layer`: Upsampling is done by series of layers which perform reverse convolution, here the forward and backward passes are swapped. This layer performs the scaling operation such that the output is same size as the input image.
 * `Skip connections`: The skip connections allow the network to use input from multiple resolution scales in decoding phase. During the decoding phase some information might be lost, having skip connections helps the network preserve the original resolution scale.
 
-![FCN](https://github.com/argmin/udacity_follow_me/blob/master/fcn.jpg)
+[FCN](https://github.com/argmin/udacity_follow_me/blob/master/fcn.jpg)
 
 The present network built has 3 layers of encoder and decoder (excluding input and activation) and a `1x1` layer which connected encoder and decoder. 
 
@@ -59,7 +59,7 @@ python follower.py /path/to/weights-file # Note it also requires config_weights-
 ```
 
 ### Code
-![Code](https://github.com/argmin/udacity_follow_me)
+[Code](https://github.com/argmin/udacity_follow_me)
 
 
 

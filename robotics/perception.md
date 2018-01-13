@@ -45,21 +45,18 @@ accuracy score: 0.940954773869
 
 Below is th econfusion matrix with raw data point and normalized matrix.
 
-![Confusion matrix](https://github.com/argmin/u3dp/blob/master/confusion_matrix.png)
+[Confusion matrix](https://github.com/argmin/u3dp/blob/master/confusion_matrix.png)
 
-![Normalized Confusion matrix](https://github.com/argmin/u3dp/blob/master/confusion_matrix_normalized.png)
+[Normalized Confusion matrix](https://github.com/argmin/u3dp/blob/master/confusion_matrix_normalized.png)
 
 
 Below are the images for classification done in while running different test cases of pick and place.
 
-![World 1](https://github.com/argmin/u3dp/blob/master/world1.png)
-![World 2](https://github.com/argmin/u3dp/blob/master/world2.png)
-![World 3](https://github.com/argmin/u3dp/blob/master/world3.png)
+[World 1](https://github.com/argmin/u3dp/blob/master/world1.png)
+[World 2](https://github.com/argmin/u3dp/blob/master/world2.png)
+[World 3](https://github.com/argmin/u3dp/blob/master/world3.png)
 
 
 ### Code
-Here's the code of interest
-- `https://github.com/argmin/u3dp/tree/master/src/RoboND-Perception-Project/pr2_robot/scripts/train_svm.py`
-- `https://github.com/argmin/u3dp/tree/master/src/RoboND-Perception-Project/pr2_robot/scripts/perception_pr2.py`
-- `https://github.com/argmin/u3dp/tree/master/src/RoboND-Perception-Project/pr2_robot/scripts/capture_features.py`
+[Code](https://github.com/argmin/u3dp/)
 

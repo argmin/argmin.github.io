@@ -147,7 +147,7 @@ theta3 = atan2(0.054, 1.5) - np.pi/2. + acos(D)
 
 ``` 
 
-![Theta 3 Derivation](https://github.com/argmin/rarm/blob/master/theta3.jpg)
+[Theta 3 Derivation](https://github.com/argmin/rarm/blob/master/theta3.jpg)
 
 #### Theta 4-6
 To compute theta4-6 we need to first find the orientation matrix from `R3_6`, when theta1-3 are applied to the transition matrix `T0_3`
@@ -186,6 +186,6 @@ theta6 = atan2(-R3_6[1,1], R3_6[1,0])
 Thanks to everyone in the Udacity Robotics ND Slack community, who helped me understand the concepts and clear the confusion.
 
 ### Code
-![Code](https://github.com/argmin/rarm/)
+[Code](https://github.com/argmin/rarm/)
 
-![Infrastructre Code](https://github.com/udacity/RoboND-Kinematics-Project) 
+[ROS Code](https://github.com/udacity/RoboND-Kinematics-Project) 
