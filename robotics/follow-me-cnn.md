@@ -1,3 +1,5 @@
+---
+layout: default
 ## Project: Follow Me
 ### Project report and execution
 ---

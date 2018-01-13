@@ -1,6 +1,7 @@
+---
+layout: default
 ## Project: Perception Pick & Place
 ### Abstract: We describe the methods learnt and techniques used in object recognition for robot pereption.
-
 ---
 
 #### Problem Setup

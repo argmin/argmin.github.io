@@ -1,4 +1,6 @@
-# Project: Pick and Place
+---
+layout: default
+## Project: Pick and Place
 #### Report
 ---
 
