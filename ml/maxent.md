@@ -208,12 +208,12 @@ avg = 2.0
 
 As you can see from the above distributions that there no emphasis on one / two events but the distribution is spread out and reasonbly smooth.
 
-### ToDo
+#### ToDo
 * Proof for geometric and gausian distribution.
 * Empirical examples for gausian distribution.
 * Improve the language of this post.
 
-### Reference
+#### Reference
 [Information Theory and Statistical Mechanics by E.T Jaynes](http://bayes.wustl.edu/etj/articles/brandeis.pdf)
 [Probabity dstribution and maximum entropy by Keith Conrad](http://www.math.uconn.edu/~kconrad/blurbs/analysis/entropypost.pdf)
 [Example code for Lagrange Multipliers](http://kitchingroup.cheme.cmu.edu/blog/2013/02/03/Using-Lagrange-multipliers-in-optimization/)
