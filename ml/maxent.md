@@ -115,7 +115,7 @@ In case of our example the constraints would be
 * Probability of each event is between 0 and 1.
 
 $$
-max -p_i * \sum\limits_{i}^{N}p_i
+max (-p_i * \sum\limits_{i}^{N}p_i)
 $$
 
 such that 
@@ -214,7 +214,7 @@ As you can see from the above distributions that there no emphasis on one / two 
 * Improve the language of this post.
 
 #### Reference
-[Information Theory and Statistical Mechanics by E.T Jaynes](http://bayes.wustl.edu/etj/articles/brandeis.pdf)
-[Probabity dstribution and maximum entropy by Keith Conrad](http://www.math.uconn.edu/~kconrad/blurbs/analysis/entropypost.pdf)
-[Example code for Lagrange Multipliers](http://kitchingroup.cheme.cmu.edu/blog/2013/02/03/Using-Lagrange-multipliers-in-optimization/)
+* [Information Theory and Statistical Mechanics by E.T Jaynes](http://bayes.wustl.edu/etj/articles/brandeis.pdf)
+* [Probabity dstribution and maximum entropy by Keith Conrad](http://www.math.uconn.edu/~kconrad/blurbs/analysis/entropypost.pdf)
+* [Example code for Lagrange Multipliers](http://kitchingroup.cheme.cmu.edu/blog/2013/02/03/Using-Lagrange-multipliers-in-optimization/)
 
