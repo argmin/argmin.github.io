@@ -137,7 +137,7 @@ The above equation can be re-written and solved using [lagrange multipliers](htt
 Lagrange formulation
 
 $$
-max ( - \sum\limits_{1}^{6} p_i * log(p_i) + c_7 (\sum\limits_{i=1}^{6} p_i - 1) + c_8 (\sum\limits_{i=1}^{6} i * p_i - a) + \sum\limits_{i=1}^{6} c_i (abs(p_i) - p_i))
+max ( - \sum\limits_{i=1}^{6} p_i * log(p_i) + c_7 (\sum\limits_{i=1}^{6} p_i - 1) + c_8 (\sum\limits_{i=1}^{6} i * p_i - a) + \sum\limits_{i=1}^{6} c_i (abs(p_i) - p_i))
 $$
 
 Below is the sample code that implements this
