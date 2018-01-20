@@ -115,7 +115,7 @@ In case of our example the constraints would be
 * Probability of each event is between 0 and 1.
 
 $$
-max (-p_i * \sum\limits_{i}^{N}p_i)
+max (- \sum\limits_{i}^{N} p_i * log(p_i))
 $$
 
 such that 
