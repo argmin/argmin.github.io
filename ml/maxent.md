@@ -5,7 +5,7 @@ layout: default
 
 Consider if there are `n` events, and there is no addtional information available about those events, then the probability of each event is `1/n`. Although intuitive & obvious this is formally known as Principle of Indifference.
 
-Given a 6 sided die, the probability of each number appearing on the face is `1/6`.
+Given a 6 sided die, the probability of each number appearing on the face is $$\frac{1}{6}$$.
 
 #### Model of a die
 ```python
@@ -104,7 +104,7 @@ An ideal probability distribution should
 The measure we use to quantify the spread of distribution is `Shannon entropy` which measures uncertainty.
 
 $$
-E = -p_i * \sum{i}{N}p_i
+E = -p_i * sum\limits_{n=1}^{N}p_i
 $$
 
 The goal is maximize the entropy while satisfying the contraints, thus capturing as much information we can from the data without making any assumption of what's unknown.
@@ -115,17 +115,17 @@ In case of our example the constraints would be
 * Probability of each event is between 0 and 1.
 
 $$
-max -p_i * \sum{i}{N}p_i
+max -p_i * \sum\limits_{i}^{N}p_i
 $$
 
 such that 
 
 $$
-\sum{1}{6} p_i = 1
+\sum\limits_{i=1}^{6} p_i = 1
 $$
 
 $$
-\sum{1}{6} i * p_i = a
+\sum\limits_{i=1}^{6} i * p_i = a
 $$
 
 $$
@@ -137,7 +137,7 @@ The above equation can be re-written and solved using [lagrange multipliers](htt
 Lagrange formulation
 
 $$
-max ( -p_i * \sum{i=1}{6}p_i + c_7 (\sum{i=1}{6} p_i - 1) + c_8 (\sum{i=1}{6} i * p_i - a) + \sum{i=1}{6} c_i (abs(p_i) - p_i))
+max ( -p_i * \sum\limits_{1}^{6} p_i + c_7 (\sum\limits_{i=1}^{6} p_i - 1) + c_8 (\sum\limits_{i=1}^{6} i * p_i - a) + \sum\limits_{i=1}^{6} c_i (abs(p_i) - p_i))
 $$
 
 Below is the sample code that implements this
