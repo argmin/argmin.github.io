@@ -184,7 +184,7 @@ print(np.sum(P[:-8]))
 
 ```
 
-Upon setting avgerage to `3.5` the best distribution we obtain is which is an ideal case
+Upon setting average to `3.5` the best distribution we obtain is which is an ideal case
 
 avg = 3.5
 ```python
