@@ -104,7 +104,7 @@ An ideal probability distribution should
 The measure we use to quantify the spread of distribution is `Shannon entropy` which measures uncertainty.
 
 $$
-E = - \sum\limits_{i=1}^{N} p_i * log(p_i)
+H = - \sum\limits_{i=1}^{N} p_i * log(p_i)
 $$
 
 The goal is maximize the entropy while satisfying the contraints, thus capturing as much information we can from the data without making any assumption of what's unknown.
