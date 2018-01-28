@@ -21,8 +21,23 @@ As the training corpus doesn't contain all possible historyi and due to sparsene
 * `H`: Holdout dataset
 * `w`: Word in the vocabulary
 * `h`: History / words from $$ w_1 ... w_{n-1} $$ 
-* C(w, h): Frequency of word `w` and history `h` occuring together in the corpus.
-* C(h): Frequency of `h` in the corpus.
+* `C(w, h)`: Frequency of word `w` and history `h` occuring together in the corpus.
+* `C(h)`: Frequency of `h` in the corpus.
+
+### Naive Model
+
+$$
+
+P(w | h) = 
+\[ 
+\left \{
+  \begin{tabular}{ccc}
+  0, if w was not seen after h \\
+  \frac{C(w,h)}{C(h)}
+  \end{tabular}
+\]
+
+$$
 
 #### Reference
 * []()
