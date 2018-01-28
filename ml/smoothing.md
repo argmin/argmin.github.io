@@ -29,7 +29,7 @@ As the training corpus doesn't contain all possible historyi and due to sparsene
 $$
 
 P(w | h) = 
-\bigg\{ \begin{array}{cc}
+\Bigg\{ \begin{array}{cc}
 0 & \mbox{if w was not seen after h} \\
 \frac{C(w,h)}{C(h)} & \mbox{if w was seen after h}
 \end{array}
