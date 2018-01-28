@@ -31,7 +31,7 @@ $$
 P(w | h) = 
 \bigg\{ \begin{array}{cc}
 0 & test
-\end{tabular}
+\end{array}
 $$
 
 #### Reference
