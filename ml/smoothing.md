@@ -29,7 +29,9 @@ As the training corpus doesn't contain all possible historyi and due to sparsene
 $$
 
 P(w | h) = 
-\bigg\{
+\bigg\{ \begin{tabular}
+
+\end{tabular}
 $$
 
 #### Reference
