@@ -31,10 +31,6 @@ $$
 P(w | h) = 
 \[ 
 \left \{
-  \begin{tabular}{ccc}
-  0, if w was not seen after h \\
-  \frac{C(w,h)}{C(h)}, if w was seen after h
-  \end{tabular}
 \]
 
 $$
