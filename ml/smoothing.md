@@ -30,7 +30,8 @@ $$
 
 P(w | h) = 
 \bigg\{ \begin{array}{cc}
-0 & test
+0 & if w was not seen after h \\
+\frac{C(w,h)}{C(h)} & if w was seen after h
 \end{array}
 $$
 
