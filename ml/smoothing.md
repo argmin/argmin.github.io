@@ -4,9 +4,15 @@ layout: default
 ---
 #### Motivation
 
-Statistical language model is estimating the probabality of next word given the history of the words i.e. probability of `n` word given previously seen `n-1` words. 
+Statistical language model is estimating the probabality of next word given the history of the words i.e. probability of word given previously seen `n-1` words. 
 $$ 
-P(w_i | w_\limits{i-n+1}^{i-1})
+P(w_i | w_{(i-1)... (i-(n-1))})
+$$
+
+And, thus probability of forming a sentence is 
+
+$$
+P(S) = \prod_{i} P(w_i | w_{(i-1)... (i-(n-1))})
 $$
 
 Number of possible historical sequence of words for a given vocabulary grows exponentially based on length of history. 
@@ -50,7 +56,7 @@ $$
 \sum_\limits{w \notin training} \frac{1}{C(h) + V} + \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V} = 1
 $$
 
-What would happen when `V` is very large and the training data is limited as shown below, this is not an accurate depection of the distribution
+What would happen when `V` is very large and the training data is limited as shown below, this is not an accurate depection of the distribution, and can assign high probability to rare sentences.
 
 $$
 \sum_\limits{w \notin training} \frac{1}{C(h) + V} \ggg \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V}
