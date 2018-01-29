@@ -47,7 +47,7 @@ $$
 
 While shifting the probablity mass a point to note is that the probabilities are notmalized and they sum to 1
 $$
-\sum\limits{w in V and w not seen after h} \frac{1}{C(h) + V} + \sum\limits{w in V and w seen after h}\frac{C(w,h)+1}{C(h) + V} = 1
+\sum\limits{\mbox{w in V and w not seen after h}} \frac{1}{C(h) + V} + \sum\limits{\mbox{w in V and w seen after h}}\frac{C(w,h)+1}{C(h) + V} = 1
 $$
 
 
