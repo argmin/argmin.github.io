@@ -47,7 +47,7 @@ $$
 
 While shifting the probablity mass a point to note is that the probabilities are notmalized and they sum to 1
 $$
-\sum_\mbox{w in V and w not seen after h} \frac{1}{C(h) + V} + \sum_\mbox{w in V and w seen after h}\frac{C(w,h)+1}{C(h) + V} = 1
+\sum_\limits{w \notin training} \frac{1}{C(h) + V} + \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V} = 1
 $$
 
 
