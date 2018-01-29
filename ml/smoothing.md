@@ -6,7 +6,7 @@ layout: default
 
 Statistical language model is estimating the probabality of next word given the history of the words i.e. probability of `n` word given previously seen `n-1` words. 
 $$ 
-P(w_n | w_1 ... w_n-1)
+P(w_n | w_1 ... w_{n-1})
 $$
 
 Number of possible historical sequence of words for a given vocabulary grows exponentially based on length of history. 
@@ -20,7 +20,7 @@ As the training corpus doesn't contain all possible historyi and due to sparsene
 * `T`: Training dataset
 * `H`: Holdout dataset
 * `w`: Word in the vocabulary
-* `h`: History / words from $$ w_1 ... w_n-1 $$ 
+* `h`: History / words from $$ w_1 ... w_{n-1} $$ 
 * `C(w, h)`: Frequency of word `w` and history `h` occuring together in the corpus.
 * `C(h)`: Frequency of `h` in the corpus.
 
@@ -50,6 +50,24 @@ $$
 \sum_\limits{w \notin training} \frac{1}{C(h) + V} + \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V} = 1
 $$
 
+What would happen when `V` is very large and the training data is limited as shown below, this is not an accurate depection of the distribution
+
+$$
+\sum_\limits{w \notin training} \frac{1}{C(h) + V} \ggg \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V}
+$$
+
+One way to counter is to use add $$ \delta $$ smoothing instead of $$ 1 $$ as shown below.
+
+$$
+P(w | h) = 
+\Bigg\{ \begin{array}{cc}
+\frac{\delta}{C(h) + \delta * V} & \mbox{if w was not seen after h} \\
+\frac{C(w,h)+\delta}{C(h) + \delta * V} & \mbox{if w was seen after h}
+\end{array}
+$$
+
+
+####
 
 
 #### Reference
