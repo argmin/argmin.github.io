@@ -56,7 +56,7 @@ $$
 \sum_\limits{w \notin training} \frac{1}{C(h) + V} \ggg \sum_\limits{w \in training}\frac{C(w,h)+1}{C(h) + V}
 $$
 
-One way to counter is to use add $$ \delta $$ smoothing instead of $$ 1 $$ as shown below.
+One way to counter is to use add $$ 0 \leq \delta < 1 $$ smoothing instead of $$ 1 $$ as shown below.
 
 $$
 P(w | h) = 
@@ -67,7 +67,16 @@ P(w | h) =
 $$
 
 
-####
+#### Estimating counts using held out dataset.
+
+
+#### Good Turing
+
+
+#### Jelinek-Mercer smoothing / Interpolation
+
+
+#### Katz smotthing
 
 
 #### Reference
