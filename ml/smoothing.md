@@ -6,7 +6,7 @@ layout: default
 
 Statistical language model is estimating the probabality of next word given the history of the words i.e. probability of `n` word given previously seen `n-1` words. 
 $$ 
-P(w_n | w_1 ... w_{n-1})
+P(w_i | w\limits{i-n+1}^{i-1})
 $$
 
 Number of possible historical sequence of words for a given vocabulary grows exponentially based on length of history. 
@@ -20,7 +20,7 @@ As the training corpus doesn't contain all possible historyi and due to sparsene
 * `T`: Training dataset
 * `H`: Holdout dataset
 * `w`: Word in the vocabulary
-* `h`: History / words from $$ w_1 ... w_{n-1} $$ 
+* `h`: History / words from $$ w_{i-1} ... w_{i-n+1} $$ 
 * `C(w, h)`: Frequency of word `w` and history `h` occuring together in the corpus.
 * `C(h)`: Frequency of `h` in the corpus.
 
