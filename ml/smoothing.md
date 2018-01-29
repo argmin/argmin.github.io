@@ -6,7 +6,7 @@ layout: default
 
 Statistical language model is estimating the probabality of next word given the history of the words i.e. probability of `n` word given previously seen `n-1` words. 
 $$ 
-P(w_i | w\limits{i-n+1}^{i-1})
+P(w_i | w_\limits{i-n+1}^{i-1})
 $$
 
 Number of possible historical sequence of words for a given vocabulary grows exponentially based on length of history. 
