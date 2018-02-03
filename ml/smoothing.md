@@ -89,7 +89,7 @@ $$
 P(w_3 | w_1, w_2) = \lambda_3 f(w_3 | w_1, w_2) + \lambda_2 f(w_3 | w_2) + \lambda_1 f(w_3)  
 $$
 
-where, $$ \sum_limits{i=1}{3} \lambda_i = 1 $$
+where, $$ \sum_limits{i=1}^{3} \lambda_i = 1 $$
 
 The interpolation model can be viewed as `HMM`, with $$\lambda_i$$ as transition probabilities. Here the training dataset is split into two parts `D` to estimate relative frequencies and `H` to estimate the weights i.e. $$ \lambda_i $$.
 
