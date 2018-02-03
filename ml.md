@@ -7,4 +7,5 @@ active_tab: machinelearning
 
 * [Regularization 1](/ml/regularization-1.html)
 * [Maximum Entropy](/ml/maxent.html)
+* [Smoothing (Incomplete)](/ml/smoothing.html)
 
