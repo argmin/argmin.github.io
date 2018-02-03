@@ -73,16 +73,33 @@ P(w | h) =
 $$
 
 
+#### Jelinek-Mercer smoothing / Interpolation
+In this smoothing we will take an trigram language model as an example.
+$$
+P(S) = \prod_{i} P(w_i | w_{i-1}, w_{i-2})
+$$
+
+And, trigram relative frequency is given by
+$$
+P(w_3 | w_1, w_2) = f(w_3 | w_1, w_2)\frac{C(w_1,w_2,w_3)}{C(w_1, w_2)}
+$$
+
+And since we already know that the many trigrams are unlikely to appear in the training set, we attempt to smooth the relative frequency by interpolating trigram, bigram, and unigram.
+$$
+P(w_3 | w_1, w_2) = \lambda_3 f(w_3 | w_1, w_2) + \lambda_2 f(w_3 | w_2) + \lambda_1 f(w_3)  
+$$
+
+where, $$ \sum_limits{i=1}{3} \lambda_i = 1 $$
+
+The interpolation model can be viewed as `HMM`, with $$\lambda_i$$ as transition probabilities. Here the training dataset is split into two parts `D` to estimate relative frequencies and `H` to estimate the weights i.e. $$ \lambda_i $$.
+
+#### Katz smoothing
+
 #### Estimating counts using held out dataset.
 
 
 #### Good Turing
 
-
-#### Jelinek-Mercer smoothing / Interpolation
-
-
-#### Katz smotthing
 
 
 #### Reference
