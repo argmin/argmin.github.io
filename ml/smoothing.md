@@ -81,7 +81,7 @@ $$
 
 And, trigram relative frequency is given by
 $$
-P(w_3 | w_1, w_2) = f(w_3 | w_1, w_2)\frac{C(w_1,w_2,w_3)}{C(w_1, w_2)}
+P(w_3 | w_1, w_2) = f(w_3 | w_1, w_2) = \frac{C(w_1,w_2,w_3)}{C(w_1, w_2)}
 $$
 
 And since we already know that the many trigrams are unlikely to appear in the training set, we attempt to smooth the relative frequency by interpolating trigram, bigram, and unigram.
