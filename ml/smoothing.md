@@ -94,6 +94,33 @@ where, $$ \lambda_3 + \lambda_2 + \lambda_1 = 1 $$
 The interpolation model can be viewed as `HMM`, with $$\lambda_i$$ as transition probabilities. Here the training dataset is split into two parts `D` to estimate relative frequencies and `H` to estimate the weights i.e. $$ \lambda_i $$.
 
 #### Katz smoothing
+Consider the previous trigram relative frequency and the interpolation model. If the counts $$ C(w_1, w_2) $$ are sufficiently large then $$ f(w_3 | w_1, w_2) $$ is a better approximator for $$ P(w_3 | w_1, w_2) $$ and thus backoff formula is given by
+
+$$
+P(w_3 | w_1, w_2) = 
+\Bigg\{ \begin{array}{cc}
+f(w_3 | w_1, w_2) & \mbox{ if C(w_1, w_2, w_3) \geq K} \\
+\alpha Q_T(w_3 | w_1, w_2) & \mbox{if 1 \leq C(w_1, w_2, w_3) < K} \\
+\beta \hat{P}(w_3 | w_2) & \mbox{otherwise} \\
+\end{array}
+$$
+
+where $$ Q_T $$ is a Good-Turing estimator and $$ \alpha $$ and $$ \beta $$ are the other hyperparameters needs to be determined based on $$ Q_T $$.
+$$
+Q_T(w_3 | w_1, w_2) = \frac{P_T(w_1, w_2, w_3)}{f(w_1, w_2)}  
+$$
+
+The bigram frequency can be recursively computed by
+
+$$
+P(w_3 | w_2) = 
+\Bigg\{ \begin{array}{cc}
+f(w_3 | w_2) & \mbox{ if C(w_2, w_3) \geq K} \\
+\alpha Q_T(w_3 | w_2) & \mbox{if 1 \leq C(w_2, w_3) < K} \\
+\beta f(w_3) & \mbox{otherwise} \\
+\end{array}
+$$
+
 
 #### Estimating counts using held out dataset.
 
@@ -103,7 +130,7 @@ The interpolation model can be viewed as `HMM`, with $$\lambda_i$$ as transition
 
 
 #### Reference
-* []()
-* []()
-* []()
+* [Statistical Methods for Speech Recognition. Jelinek](https://mitpress.mit.edu/books/statistical-methods-speech-recognition)
+* [An empirical study of smoothing techniques for language modeling](http://u.cs.biu.ac.il/~yogo/courses/mt2013/papers/chen-goodman-99.pdf)
+* [NLP Smoothing tutorial](https://nlp.stanford.edu/~wcmac/papers/20050421-smoothing-tutorial.pd()
 
